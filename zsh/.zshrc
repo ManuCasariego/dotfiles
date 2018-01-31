@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-  export ZSH=/home/manu/.oh-my-zsh
+export ZSH=/home/manu/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -93,14 +93,20 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+alias zshconfig="subl ~/.zshrc"
+
 alias update="sudo apt update -y"
 alias upgrade="sudo apt upgrade -y"
 alias autoremove="sudo apt autoremove -y"
 
 alias haztodoporfi="update && upgrade && autoremove"
+alias doeverythingplz="update && upgrade && autoremove"
 
 alias install="sudo apt install -y "
+alias remove="sudo apt remove -y "
 
 alias ssh1="sudo ssh -i ~/.ssh/bamaTest1.pem ubuntu@52.19.41.88"
 alias python="python3"
 alias pip="pip3"
+
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
