@@ -45,7 +45,8 @@ hide_edge_borders both
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+#bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec urxvt
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -223,7 +224,7 @@ exec_always feh --bg-scale ~/Pictures/wallpapers/8oLest7.jpg
 exec xinput set-prop 13 278 1
 exec xinput set-prop 13 288 1
 
-assign [class="Gnome-terminal"] $workspace1
+assign [class="URxvt"] $workspace1
 assign [class="Firefox"] $workspace2
 assign [class="Sublime_text"] $workspace3
 assign [class="Spotify"] $workspace10
@@ -240,3 +241,5 @@ exec nm-applet
 for_window [class="^.*"] border pixel 0
 
 bindsym $mod+e exec thunar
+
+exec_always --no-startup-id xrdb ~/.Xresources
