@@ -30,17 +30,6 @@ client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color      
 
 hide_edge_borders both
 
-# This font is widely installed, provides lots of unicode glyphs, right-to-left
-# text rendering and scalability on retina/hidpi displays (thanks to pango).
-#font pango:DejaVu Sans Mono 8
-
-# Before i3 v4.8, we used to recommend this one as the default:
-# font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
-# The font above is very space-efficient, that is, it looks good, sharp and
-# clear in small sizes. However, its unicode glyph coverage is limited, the old
-# X core fonts rendering does not support right-to-left and this being a bitmap
-# font, it doesn’t scale on retina/hidpi displays.
-
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
@@ -49,24 +38,20 @@ floating_modifier $mod
 bindsym $mod+Return exec urxvt
 
 # kill focused window
-bindsym $mod+Shift+q kill
+bindsym $mod+q kill
 
 # start dmenu (a program launcher)
-# changed to rofi
-bindsym $mod+d exec rofi -show run -lines 3 -eh 2 -width 100 -padding 800 -opacity "85" -bw 0 -bc "$bg-color" -bg "$bg-color" -fg "$text-color" -hlbg "$bg-color" -hlfg "#9575cd" -font "System San Francisco Display 18"
+#bindsym $mod+d exec rofi -show run -lines 3 -eh 2 -width 100 -padding 800 -opacity "85" -bw 0 -bc "$bg-color" -bg "$bg-color" -fg "$text-color" -hlbg "$bg-color" -hlfg "#9575cd" -font "System San Francisco Display 18"
+bindsym $mod+d exec --no-startup-id rofi -show drun
+bindsym $mod+Shift+d exec --no-startup-id i3-dmenu-desktop
 
 bindsym $mod+l exec i3lock --color "$bg-color"
-
-# There also is the (new) i3-dmenu-desktop which only displays applications
-# shipping a .desktop file. It is a wrapper around dmenu, so you need that
-# installed.
-bindsym $mod+Shift+d exec --no-startup-id i3-dmenu-desktop
 
 # change focus
 #bindsym $mod+j focus left
 #bindsym $mod+k focus down
 #bindsym $mod+l focus up
-#bindsym $mod+ntilde focus right
+#bindsym $mod+ñ focus right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
@@ -78,7 +63,7 @@ bindsym $mod+Right focus right
 bindsym $mod+Shift+j move left
 bindsym $mod+Shift+k move down
 bindsym $mod+Shift+l move up
-bindsym $mod+Shift+ntilde move right
+bindsym $mod+Shift+ñ move right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Shift+Left move left
@@ -218,7 +203,10 @@ bindsym XF86MonBrightnessDown exec light -U 5 # decrease screen brightness
 bindsym Print exec gnome-screenshot
 
 # Wallpaper
-exec_always feh --bg-scale ~/Pictures/wallpapers/8oLest7.jpg
+#exec_always feh --bg-scale ~/Pictures/wallpapers/8oLest7.jpg
+exec_always feh --bg-scale ~/Pictures/wallpapers/CYiqqHm.jpg
+
+
 
 # Touchpad options
 exec xinput set-prop 13 278 1
@@ -243,3 +231,15 @@ for_window [class="^.*"] border pixel 0
 bindsym $mod+e exec thunar
 
 exec_always --no-startup-id xrdb ~/.Xresources
+
+
+# Floating windows
+# Get info with 'xprop' and 'xwininfo', class uses second value showed at WM_CLASS
+for_window [class="Steam"] floating enable
+for_window [class="Connman-gtk"] floating enable
+for_window [class="Lutris"] floating enable
+for_window [class="cantata"] floating enable
+for_window [class="Scp-dbus-service.py"] floating enable
+for_window [class="Diseases"] floating enable
+for_window [class="plank"] floating enable
+for_window [instance ="plank"] floating enable
