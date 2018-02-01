@@ -201,13 +201,12 @@ bindsym XF86MonBrightnessUp exec light -A 5 # increase screen brightness
 bindsym XF86MonBrightnessDown exec light -U 5 # decrease screen brightness
 
 # Screenshots
-bindsym Print exec gnome-screenshot
+#bindsym Print exec gnome-screenshot
+bindsym Print exec scrot '%Y-%m-%d-%h-%T_$wx$h_scrot.png' -e 'mv $f ~/Pictures/screenshots'
 
 # Wallpaper
 #exec_always feh --bg-scale ~/Pictures/wallpapers/8oLest7.jpg
 exec_always feh --bg-scale ~/Pictures/wallpapers/CYiqqHm.jpg
-
-
 
 # Touchpad options
 exec xinput set-prop 13 278 1
@@ -244,3 +243,7 @@ for_window [class="Scp-dbus-service.py"] floating enable
 for_window [class="Diseases"] floating enable
 for_window [class="plank"] floating enable
 for_window [instance ="plank"] floating enable
+
+gaps inner 10
+gaps outer 10
+smart_gaps on
