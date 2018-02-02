@@ -101,12 +101,12 @@ bindsym $mod+a focus parent
 set $workspace1 "1: Terminals "
 set $workspace2 "2: FireFox "
 set $workspace3 "3: Sublime"
-set $workspace4 "4: "
-set $workspace5 "5: "
-set $workspace6 "6: "
+set $workspace4 "4: Mail"
+set $workspace5 "5: Develop1"
+set $workspace6 "6: Develop2"
 set $workspace7 "7: "
-set $workspace8 "8: "
-set $workspace9 "9: "
+set $workspace8 "8: Communications1"
+set $workspace9 "9: Communications2"
 set $workspace10 "10: Music"
 
 # switch to workspace

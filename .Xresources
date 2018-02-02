@@ -48,7 +48,7 @@
 
 ! Colors
 #define white		#D3D3D3
-#define black 		#232629
+#define black		#232629
 #define gray		#383838
 #define red		#B06A58
 #define green		#95B47B
@@ -90,6 +90,5 @@ Xft.antialiasing: true
 
 rofi.terminal:         urxvtc
 rofi.sidebar-mode:     true
-rofi.theme:            sidestyle.rasi
-rofi.drun-icon-theme:  Papirus
 rofi.show-icons: true
+rofi.drun-icon-theme: Papirus
