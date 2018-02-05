@@ -46,13 +46,13 @@ bindsym $mod+d exec --no-startup-id rofi -show drun
 bindsym $mod+Shift+d exec --no-startup-id i3-dmenu-desktop
 
 #bindsym $mod+l exec i3lock --color "$bg-color"
-bindsym $mod+l exec ~/manucustomscripts/lock.sh
+bindsym $mod+p exec ~/manucustomscripts/lock.sh
 
 # change focus
-#bindsym $mod+j focus left
-#bindsym $mod+k focus down
-#bindsym $mod+l focus up
-#bindsym $mod+ñ focus right
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
@@ -61,10 +61,10 @@ bindsym $mod+Up focus up
 bindsym $mod+Right focus right
 
 # move focused window
-bindsym $mod+Shift+j move left
-bindsym $mod+Shift+k move down
-bindsym $mod+Shift+l move up
-bindsym $mod+Shift+ñ move right
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+l move right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Shift+Left move left
@@ -73,7 +73,7 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # split in horizontal orientation
-bindsym $mod+h split h
+bindsym $mod+g split h
 
 # split in vertical orientation
 bindsym $mod+v split v
@@ -177,6 +177,7 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
         status_command i3blocks -c /home/manu/.config/i3/i3blocks.conf
+        #status_command ~/.config/polybar/launch.sh
         position top
         colors {
 			background $bg-color
@@ -206,21 +207,29 @@ bindsym Print exec scrot '%Y-%m-%d-%h-%T_$wx$h_scrot.png' -e 'mv $f ~/Pictures/s
 
 # Wallpaper
 #exec_always feh --bg-scale ~/Pictures/wallpapers/8oLest7.jpg
-exec_always feh --bg-scale ~/Pictures/wallpapers/CYiqqHm.jpg
+#exec_always feh --bg-scale ~/Pictures/wallpapers/CYiqqHm.jpg
+exec_always feh --bg-scale ~/Pictures/Wallpapers/Fi9lauX.jpg
+
 
 # Touchpad options
 exec xinput set-prop 13 278 1
 exec xinput set-prop 13 288 1
 
-assign [class="URxvt"] $workspace1
+# Touchpad options
+exec xinput set-prop 14 296 1
+exec xinput set-prop 14 283 1
+
+#assign [class="URxvt"] $workspace1
 assign [class="Firefox"] $workspace2
-assign [class="Sublime_text"] $workspace3
+#assign [class="Sublime_text"] $workspace3
+assign [class="Thunderbird"] $workspace4
 assign [class="Spotify"] $workspace10
 for_window [class="Spotify"] move to workspace $workspace10
 
 exec --no-startup-id spotify
 exec --no-startup-id firefox
-exec --no-startup-id subl
+#exec --no-startup-id subl
+exec --no-startup-id thunderbird
 
 exec_always --no-startup-id compton -f
 
