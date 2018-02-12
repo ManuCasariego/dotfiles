@@ -195,11 +195,6 @@ bindsym XF86AudioRaiseVolume exec --no-startup-id pactl -- set-sink-volume 0 +5%
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl -- set-sink-volume 0 -5% #decrease sound volume
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
 
-# Pulse Audio controls
-bindsym F3 exec --no-startup-id pactl -- set-sink-volume 0 +5% #increase sound volume
-bindsym F2 exec --no-startup-id pactl -- set-sink-volume 0 -5% #decrease sound volume
-bindsym F1 exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
-
 # Screen brightness controls
 # bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
 # bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightness
@@ -223,7 +218,7 @@ for_window [class="Lutris"] floating enable
 for_window [class="cantata"] floating enable
 for_window [class="Scp-dbus-service.py"] floating enable
 for_window [class="Diseases"] floating enable
-for_window [class="plank"] floating enableq
+for_window [class="plank"] floating enable
 for_window [instance ="plank"] floating enable
 
 # Touchpad options
@@ -249,18 +244,16 @@ exec_always --no-startup-id xrdb ~/.Xresources
 
 for_window [class="^.*"] border pixel 0
 
-
 gaps inner 10
 gaps outer 0
 smart_gaps on
 hide_edge_borders both
 focus_follows_mouse no
 
-
 bindsym $mod+F2 exec playerctl pause
 bindsym $mod+F3 exec playerctl next
 bindsym $mod+F1 exec playerctl previous
 
-exec --no-startup-id xmodmap -e "clear lock" #disable caps lock switch
+exec --no-startup-id -e "clear lock" #disable caps lock switch
 exec --no-startup-id xmodmap -e "keysym Caps_Lock = Escape" #set caps_lock as escape
-exec --no-startup-id xset r rate 300 35
+
