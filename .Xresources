@@ -22,10 +22,11 @@
 #define nord13 #EBCB8B
 #define nord14 #A3BE8C
 #define nord15 #B48EAD
+#define nord16 #ff00ff
 
 *.foreground:   nord4
 *.background:   nord0
-*.cursorColor:  nord4
+*.cursorColor:  nord16
 *fading: 35
 *fadeColor: nord3
 
@@ -92,3 +93,5 @@ rofi.terminal:         urxvtc
 rofi.sidebar-mode:     true
 rofi.show-icons: true
 rofi.drun-icon-theme: Papirus
+
+

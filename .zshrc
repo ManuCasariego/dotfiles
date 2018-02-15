@@ -114,4 +114,6 @@ alias pip="pip3"
 
 alias neo="neofetch"
 
+export TERMINAL="urxvt"
+
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
