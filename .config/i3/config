@@ -90,8 +90,8 @@ bindsym $mod+space focus mode_toggle
 #                          Some workspace action
 # ---------------------------------------------------------------------------
 set $workspace1 "1: Terminals "
-set $workspace2 "2: Browser "
-set $workspace3 "3: Sublime"
+set $workspace2 "2: Browser "
+set $workspace3 "3: Sublime "
 set $workspace4 "4: Thunderbird"
 set $workspace5 "5: Develop 1"
 set $workspace6 "6: Develop 2"
@@ -198,7 +198,6 @@ assign [class="Spotify"] $workspace10
 for_window [class="Spotify"] move to workspace $workspace10
 
 exec --no-startup-id spotify
-exec --no-startup-id firefox
 exec --no-startup-id thunderbird
 exec --no-startup-id nm-applet
 
