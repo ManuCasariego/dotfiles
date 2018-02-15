@@ -108,9 +108,6 @@ alias remove="sudo apt remove -y "
 alias ssh1="sudo ssh -i ~/.ssh/bama-test.pem ubuntu@52.19.41.88"
 alias ssh2="sudo ssh -i ~/.ssh/manu-ec2.pem ubuntu@34.244.32.194"
 
-alias python="python3.6"
-alias pip="pip3"
-
 alias neo="neofetch"
 
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh

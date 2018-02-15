@@ -203,6 +203,7 @@ exec --no-startup-id nm-applet
 
 exec_always --no-startup-id compton -f
 exec_always --no-startup-id xrdb ~/.Xresources
+exec_always --no-startup-id setxkbmap -option caps:escape
 
 for_window [class="^.*"] border pixel 0
 
@@ -216,8 +217,6 @@ bindsym $mod+F2 exec playerctl play-pause
 bindsym $mod+F3 exec playerctl next
 bindsym $mod+F1 exec playerctl previous
 
-exec --no-startup-id xmodmap -e "clear lock" #disable caps lock switch
-exec --no-startup-id xmodmap -e "keysym Caps_Lock = Escape" #set caps_lock as escape
 exec --no-startup-id xset r rate 300 35
 
 
