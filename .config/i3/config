@@ -91,7 +91,7 @@ bindsym $mod+space focus mode_toggle
 # ---------------------------------------------------------------------------
 set $workspace1 "1: Terminals "
 set $workspace2 "2: Browser "
-set $workspace3 "3: Sublime "
+set $workspace3 "3: Sublime"
 set $workspace4 "4: Thunderbird"
 set $workspace5 "5: Develop 1"
 set $workspace6 "6: Develop 2"
@@ -193,6 +193,7 @@ exec xinput set-prop 14 296 1
 exec xinput set-prop 14 283 1
 
 assign [class="Firefox"] $workspace2
+assign [class="Opera"] $workspace2
 assign [class="Thunderbird"] $workspace4
 assign [class="Spotify"] $workspace10
 for_window [class="Spotify"] move to workspace $workspace10
@@ -200,6 +201,7 @@ for_window [class="Spotify"] move to workspace $workspace10
 exec --no-startup-id spotify
 exec --no-startup-id thunderbird
 exec --no-startup-id nm-applet
+exec --no-startup-id opera
 
 exec_always --no-startup-id compton -f
 exec_always --no-startup-id xrdb ~/.Xresources
@@ -219,9 +221,9 @@ bindsym $mod+F1 exec playerctl previous
 
 exec --no-startup-id xset r rate 300 35
 
-
-# Start i3bar to display a workspace bar (plus the system information i3status
-# finds out, if available)
+#exec_always --no-startup-id ~/.config/polybar/launch.sh
+#Start i3bar to display a workspace bar (plus the system information i3status
+#finds out, if available)
 bar {
         status_command i3blocks -c /home/manu/.config/i3/i3blocks.conf
         position top

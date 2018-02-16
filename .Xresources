@@ -62,10 +62,20 @@
 ! Define amount of transparency for window
 #define trans 100
 
-URxvt*font: xft:Source Code Pro:size=13:antialias=true:hinting=true,\
-				xft:Powerline,\
-				xft:Symbola:size=9,\
-				xft:FontAwesome
+! Source Code Pro Setup
+URxvt.allow_bold:           true
+URxvt*font: xft:source code pro for powerline:regular:pixelsize=18
+URxvt*imFont: xft:source code pro for powerline:regular:pixelsize=18
+URxvt*boldFont: xft:source code pro for powerline:semibold:pixelsize=18
+URxvt*italicFont: xft:source code pro for powerline:italic:pixelsize=18
+URxvt*boldItalicFont: xft:source code pro for powerline:semibold:italic:pixelsize=18
+URxvt*letterSpace: -1
+
+
+!URxvt*font: xft:Source Code Pro:size=13:antialias=true:hinting=true,\
+!				xft:Powerline,\
+!				xft:Symbola:size=9,\
+!				xft:FontAwesome
 
 URxvt.internalBorder:30
 ! URxvt.borderColor:[trans]black
@@ -92,4 +102,11 @@ Xft.antialiasing: true
 rofi.terminal:         urxvtc
 rofi.sidebar-mode:     true
 rofi.show-icons: true
+
 rofi.drun-icon-theme: Papirus
+
+URxvt.perl-ext-common: default,matcher,resize-font
+URxvt.url-launcher: /usr/bin/xdg-open
+URxvt.matcher.button: 1
+URxvt.colorUL: #ff00ff
+
