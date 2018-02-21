@@ -172,7 +172,7 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # Wallpaper
-exec_always feh --bg-scale ~/Pictures/Wallpapers/Fi9lauX.jpg
+#exec_always feh --bg-scale ~/Pictures/Wallpapers/Fi9lauX.jpg
 
 # Floating windows
 # Get info with 'xprop' and 'xwininfo', class uses second value showed at WM_CLASS
