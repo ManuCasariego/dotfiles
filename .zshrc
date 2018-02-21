@@ -111,3 +111,7 @@ alias ssh2="sudo ssh -i ~/.ssh/manu-ec2.pem ubuntu@34.244.32.194"
 alias neo="neofetch"
 
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

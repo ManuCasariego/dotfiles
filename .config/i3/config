@@ -36,7 +36,8 @@ floating_modifier $mod
 bindsym $mod+Return exec urxvt
 
 # start the file manager
-bindsym $mod+e exec thunar
+bindsym $mod+t exec thunar
+bindsym $mod+Shift+t exec urxvt -e ranger
 
 # kill focused window
 bindsym $mod+q kill
@@ -206,6 +207,7 @@ exec --no-startup-id opera
 exec_always --no-startup-id compton -f
 exec_always --no-startup-id xrdb ~/.Xresources
 exec_always --no-startup-id setxkbmap -option caps:escape
+exec --no-startup-id variety
 
 for_window [class="^.*"] border pixel 0
 
@@ -215,9 +217,9 @@ smart_gaps on
 hide_edge_borders both
 focus_follows_mouse no
 
-bindsym $mod+F2 exec playerctl play-pause
-bindsym $mod+F3 exec playerctl next
-bindsym $mod+F1 exec playerctl previous
+bindsym $mod+F2 exec playerctl --player=spotify play-pause
+bindsym $mod+F3 exec playerctl --player=spotify next
+bindsym $mod+F1 exec playerctl --player=spotify previous
 
 exec --no-startup-id xset r rate 300 35
 
