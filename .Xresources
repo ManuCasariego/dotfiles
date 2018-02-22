@@ -25,7 +25,7 @@
 #define nord16 #ff00ff
 
 *.foreground:   nord4
-*.background:   nord0
+*.background:  nord0
 *.cursorColor:  nord16
 *fading: 35
 *fadeColor: nord3
@@ -88,8 +88,8 @@ URxvt.depth: 32
 URxvt.cursorUnderline: 1
 URxvt.letterSpace: -1
 URxvt*loginShell: false
-! URxvt.background: [trans]black
 ! URxvt.foreground: white
+!URxvt.background: rgba:2e00/3400/4000/3300
 
 ! Xft settings 
 Xft.dpi 147 ! Screen DPI (true 147)
