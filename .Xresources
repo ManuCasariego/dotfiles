@@ -25,7 +25,7 @@
 #define nord16 #ff00ff
 
 *.foreground:   nord4
-*.background:  nord0
+*.background:  [90]nord0
 *.cursorColor:  nord16
 *fading: 35
 *fadeColor: nord3

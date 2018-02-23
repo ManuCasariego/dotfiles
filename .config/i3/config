@@ -37,7 +37,7 @@ bindsym $mod+Return exec urxvt
 
 # start the file manager
 bindsym $mod+t exec thunar
-bindsym $mod+Shift+t exec urxvt -e ranger
+bindsym $mod+Shift+t exec urxvt -e "ranger" &
 
 # kill focused window
 bindsym $mod+q kill

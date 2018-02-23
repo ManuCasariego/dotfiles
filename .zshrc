@@ -8,6 +8,8 @@ export ZSH=/home/manu/.oh-my-zsh
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="cobalt2"
+#ZSH_THEME="alien"
+#ZSH_THEME="agnosterzak"
 
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
@@ -115,3 +117,7 @@ source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+VISUAL=vim
+export VISUAL
+EDITOR=vim
+export EDITOR
