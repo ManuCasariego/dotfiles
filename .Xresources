@@ -99,11 +99,10 @@ Xft.hintstyle: hintnone
 Xft.rgba: rgb
 Xft.antialiasing: true
 
-rofi.terminal:         urxvtc
-rofi.sidebar-mode:     true
-rofi.show-icons: true
-
-rofi.drun-icon-theme: Papirus
+!rofi.terminal:         urxvtc
+!rofi.sidebar-mode:     true
+!rofi.show-icons: true
+!rofi.drun-icon-theme: Papirus
 
 URxvt.perl-ext-common: default,matcher,resize-font
 URxvt.url-launcher: /usr/bin/xdg-open
