@@ -91,15 +91,15 @@ bindsym $mod+space focus mode_toggle
 #                          Some workspace action
 # ---------------------------------------------------------------------------
 set $workspace1 "1: Terminals "
-set $workspace2 "2: Browser "
-set $workspace3 "3: Sublime"
-set $workspace4 "4: Thunderbird"
+set $workspace2 "2: Web"
+set $workspace3 "3: Text"
+set $workspace4 "4: Mail"
 set $workspace5 "5: Develop 1"
 set $workspace6 "6: Develop 2"
 set $workspace7 "7: Magic"
 set $workspace8 "8: Communications 1"
 set $workspace9 "9: Communications 2"
-set $workspace10 "10: Spotify"
+set $workspace10 "10: Music"
 
 # switch to workspace
 bindsym $mod+1 workspace $workspace1
@@ -114,16 +114,26 @@ bindsym $mod+9 workspace $workspace9
 bindsym $mod+0 workspace $workspace10
 
 # move focused container to workspace
-bindsym $mod+Shift+1 move container to workspace $workspace1
-bindsym $mod+Shift+2 move container to workspace $workspace2
-bindsym $mod+Shift+3 move container to workspace $workspace3
-bindsym $mod+Shift+4 move container to workspace $workspace4
-bindsym $mod+Shift+5 move container to workspace $workspace5
-bindsym $mod+Shift+6 move container to workspace $workspace6
-bindsym $mod+Shift+7 move container to workspace $workspace7
-bindsym $mod+Shift+8 move container to workspace $workspace8
-bindsym $mod+Shift+9 move container to workspace $workspace9
-bindsym $mod+Shift+0 move container to workspace $workspace10
+bindsym $mod+Shift+1 move container to workspace $workspace1; workspace $workspace1
+
+bindsym $mod+Shift+2 move container to workspace $workspace2; workspace $workspace2
+
+bindsym $mod+Shift+3 move container to workspace $workspace3; workspace $workspace3
+
+bindsym $mod+Shift+4 move container to workspace $workspace4; workspace $workspace4
+
+bindsym $mod+Shift+5 move container to workspace $workspace5; workspace $workspace5
+
+bindsym $mod+Shift+6 move container to workspace $workspace6; workspace $workspace6
+
+bindsym $mod+Shift+7 move container to workspace $workspace7; workspace $workspace7
+
+bindsym $mod+Shift+8 move container to workspace $workspace8; workspace $workspace8
+
+bindsym $mod+Shift+9 move container to workspace $workspace9; workspace $workspace9
+
+bindsym $mod+Shift+0 move container to workspace $workspace10; workspace $workspace10
+
 
 
 bindsym $mod+Prior		workspace prev
@@ -209,7 +219,7 @@ exec_always --no-startup-id xrdb ~/.Xresources
 exec_always --no-startup-id setxkbmap -option caps:escape
 exec --no-startup-id variety
 
-for_window [class="^.*"] border pixel 0
+for_window [class="^.*"] border pixel 1
 
 gaps inner 10
 gaps outer 0

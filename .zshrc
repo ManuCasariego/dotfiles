@@ -7,9 +7,9 @@ export ZSH=/home/manu/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-#ZSH_THEME="cobalt2"
+ZSH_THEME="cobalt2"
 #ZSH_THEME="alien"
-ZSH_THEME="agnosterzak"
+#ZSH_THEME="agnosterzak"
 
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
@@ -107,8 +107,8 @@ alias doeverythingplz="update && upgrade && autoremove"
 alias install="sudo apt install -y "
 alias remove="sudo apt remove -y "
 
-alias ssh1="sudo ssh -i ~/.ssh/bama-test.pem ubuntu@52.19.41.88"
-alias ssh2="sudo ssh -i ~/.ssh/manu-ec2.pem ubuntu@34.244.32.194"
+alias ssh_bama="sudo ssh -i ~/.ssh/bama-test.pem ubuntu@52.19.41.88"
+alias ssh_manu="sudo ssh -i ~/.ssh/manu-ec2.pem ubuntu@34.244.32.194"
 
 alias neo="neofetch"
 
