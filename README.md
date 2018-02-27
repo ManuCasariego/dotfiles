@@ -1,6 +1,6 @@
 # My very own dotfiles
 
-![pic](pic.jpg)
+![pic](pic.png)
 
 This are some of my linux dotfiles
 
@@ -8,4 +8,7 @@ This are some of my linux dotfiles
 
 + i3 (i3-gaps)
 + urxvt (rxvt-unicode) 
++ Fonts
++ rofi
++ Custom JetBrains IDEs Settings
 
