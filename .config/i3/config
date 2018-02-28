@@ -181,6 +181,10 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+bindsym $mod+period exec variety -n
+
+bindsym $mod+comma exec variety -p
+
 # Wallpaper
 #exec_always feh --bg-scale ~/Pictures/Wallpapers/Fi9lauX.jpg
 
