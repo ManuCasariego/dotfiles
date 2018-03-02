@@ -1,6 +1,6 @@
 # My very own dotfiles
 
-![pic](pic.png)
+![pic](picDesktop.png)
 
 This are some of my linux dotfiles
 
