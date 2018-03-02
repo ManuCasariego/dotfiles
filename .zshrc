@@ -8,6 +8,7 @@ export ZSH=/home/manu/.oh-my-zsh
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="cobalt2"
+#ZSH_THEME="random"
 #ZSH_THEME="alien"
 #ZSH_THEME="agnosterzak"
 
@@ -112,7 +113,6 @@ alias ssh_manu="sudo ssh -i ~/.ssh/manu-ec2.pem ubuntu@34.244.32.194"
 
 alias neo="neofetch"
 
-source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
