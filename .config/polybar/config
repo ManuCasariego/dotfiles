@@ -9,7 +9,7 @@
 
 [colors]
 background = ${xrdb:color0:#222}
-background-alt = #35B9FF
+background-alt = ${xrdb:color0:#222}
 foreground = ${xrdb:color7:#222}
 foreground-alt = #fff
 primary = #ECEFF4
@@ -98,7 +98,7 @@ interval = 25
 mount-0 = /
 mount-1 = /home
 
-label-mounted = %{F#0a81f5}%mountpoint%%{F-}: %percentage_used%%
+label-mounted = %{F#FABADA}%mountpoint%%{F-}: %percentage_used%%
 label-unmounted = %mountpoint% not mounted
 label-unmounted-foreground = ${colors.foreground-alt}
 
@@ -241,34 +241,34 @@ format-underline = #0a6cf5
 
 label = %time% %date%
 
-
 [module/volume]
 type = internal/volume
 
-format-volume = <bar-volume> <label-volume>
-label-volume = "VOL "
+format-volume = <label-volume> <bar-volume>
+label-volume = VOL
 label-volume-foreground = ${root.foreground}
 
-format-muted-prefix = "🎜 "
+format-muted-prefix = " "
 format-muted-foreground = ${colors.foreground-alt}
-label-muted = "🔇 muted"
+label-muted = sound muted
 
 bar-volume-width = 10
-bar-volume-foreground-0 = #55aa55
-bar-volume-foreground-1 = #55aa55
-bar-volume-foreground-2 = #55aa55
-bar-volume-foreground-3 = #55aa55
-bar-volume-foreground-4 = #55aa55
-bar-volume-foreground-5 = #f5a70a
-bar-volume-foreground-6 = #ff5555
+bar-volume-foreground-0 = ${xrdb:color10}
+bar-volume-foreground-1 = ${xrdb:color10}
+bar-volume-foreground-2 = ${xrdb:color10}
+bar-volume-foreground-3 = ${xrdb:color10}
+bar-volume-foreground-4 = ${xrdb:color10}
+bar-volume-foreground-5 = ${xrdb:color11}
+bar-volume-foreground-6 = ${xrdb:color1}
 bar-volume-gradient = false
 bar-volume-indicator = |
 bar-volume-indicator-font = 2
-bar-volume-fill = ─
+bar-volume-fill = =
 bar-volume-fill-font = 2
-bar-volume-empty = ─
+bar-volume-empty = =
 bar-volume-empty-font = 2
 bar-volume-empty-foreground = ${colors.foreground-alt}
+
 
 [module/battery]
 type = internal/battery
