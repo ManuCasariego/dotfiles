@@ -103,7 +103,7 @@ alias upgrade="sudo apt upgrade -y"
 alias autoremove="sudo apt autoremove -y"
 
 alias haztodoporfi="update && upgrade && autoremove"
-alias doeverythingplz="update && upgrade && autoremove"
+alias doeverythingplz="sudo pacman -Syu"
 
 alias install="sudo apt install -y "
 alias remove="sudo apt remove -y "
@@ -113,6 +113,11 @@ alias ssh_manu="sudo ssh -i ~/.ssh/manu-ec2.pem ubuntu@34.244.32.194"
 
 alias neo="neofetch"
 
+alias vimi3="vim ~/.config/i3/config"
+
+alias vimxres="vim ~/.Xresources"
+
+alias subl="subl3"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm

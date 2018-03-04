@@ -25,7 +25,7 @@
 #define nord16 #ff00ff
 
 *.foreground:   nord4
-*.background:  [90]nord0
+*.background:  [85]nord0
 *.cursorColor:  nord16
 *fading: 35
 *fadeColor: nord3
@@ -64,13 +64,11 @@
 
 ! Source Code Pro Setup
 URxvt.allow_bold:           true
-!URxvt*font: xft:source code pro for powerline:regular:pixelsize=18
-URxvt*font: xft:Noto Mono:pixelsize=18,xft:Inconsolata\ for\ Powerline:size=12,xft:fa-brands-400.ttf,xtf:fa-regular-400.ttf
-!URxvt*imFont: xft:source code pro for powerline:regular:pixelsize=18
-URxvt*imFont: xft:source code pro for powerline:regular:pixelsize=18
-URxvt*boldFont: xft:source code pro for powerline:semibold:pixelsize=18
-URxvt*italicFont: xft:source code pro for powerline:italic:pixelsize=18
-URxvt*boldItalicFont: xft:source code pro for powerline:semibold:italic:pixelsize=18
+URxvt*font: xft:Noto Mono for Powerline:regular:size=15,xft:Menlo for Powerline,xft:Font Awesome 5 Free:regular,xft:Font Awesome 5 Brands:Regular,xft:Font Awesome 5 Free:Solid
+URxvt*imFont: xft:Noto Mono for Powerline:regular:size=15
+URxvt*boldFont: xft:Noto Mono for Powerline:semibold:size=15
+URxvt*italicFont: xft:Noto Mono for Powerline:italic:size=15
+URxvt*boldItalicFont: xft:Noto Mono for Powerline:semibold:italic:size=15
 
 URxvt*letterSpace: -1
 
@@ -82,24 +80,24 @@ URxvt*letterSpace: -1
 URxvt.internalBorder:30
 ! URxvt.borderColor:[trans]black
 URxvt.scrollBar: false
-! URxvt.colorBD: 
-! URxvt.colorIT: 
-! URxvt.colorUL: 
+! URxvt.colorBD:
+! URxvt.colorIT:
+! URxvt.colorUL:
 ! URxvt.tintColor: red
-URxvt.depth: 32
 URxvt.cursorUnderline: 1
 URxvt.letterSpace: -1
 URxvt*loginShell: false
-! URxvt.foreground: white
+!URxvt.foreground: white
 !URxvt.background: rgba:2e00/3400/4000/3300
 
-! Xft settings 
-Xft.dpi 147 ! Screen DPI (true 147)
+! Xft settings
+!Xft.dpi 147 ! Screen DPI (true 147)
 Xft.autohint: 0
 Xft.lcdfilter: lcddefault
 Xft.hintstyle: hintnone
 Xft.rgba: rgb
 Xft.antialiasing: true
+URxvt.depth: 32
 
 !rofi.terminal:         urxvtc
 !rofi.sidebar-mode:     true
