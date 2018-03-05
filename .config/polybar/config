@@ -194,7 +194,7 @@ interval = 3.0
 
 format-connected = <label-connected> <ramp-signal>
 format-connected-underline = #9f78e1
-label-connected = %essid% %signal%%
+label-connected =  %essid% %signal%%
 
 format-disconnected =
 ;format-disconnected = <label-disconnected>
@@ -230,10 +230,10 @@ type = internal/date
 interval = 1
 
 date = " %d-%m-%Y"
-date-alt = " %Y-%m-%d"
+;date-alt = " %Y-%m-%d"
 
 time = %H:%M
-time-alt = %H:%M:%S
+;time-alt = %H:%M:%S
 
 format-prefix = " "
 format-prefix-foreground = #0a6cf5
