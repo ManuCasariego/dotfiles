@@ -98,16 +98,16 @@ bindsym F3 exec --no-startup-id pactl -- set-sink-volume 0 +5% #increase sound v
 bindsym F2 exec --no-startup-id pactl -- set-sink-volume 0 -5% #decrease sound volume
 bindsym F1 exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
 
-bindsym $mod+F2 exec playerctl --player=spotify play-pause
-bindsym $mod+F3 exec playerctl --player=spotify next
-bindsym $mod+F1 exec playerctl --player=spotify previous
+bindsym $mod+F2 exec --no-startup-id playerctl --player=spotify play-pause
+bindsym $mod+F3 exec --no-startup-id playerctl --player=spotify next
+bindsym $mod+F1 exec --no-startup-id playerctl --player=spotify previous
 
 # Screen brightness controls
-bindsym XF86MonBrightnessUp exec light -A 5 # increase screen brightness
-bindsym XF86MonBrightnessDown exec light -U 5 # decrease screen brightness
+bindsym XF86MonBrightnessUp exec --no-startup-id light -A 5 # increase screen brightness
+bindsym XF86MonBrightnessDown exec --no-startup-id light -U 5 # decrease screen brightness
 
 # Screenshots
-bindsym Print exec scrot '%Y-%m-%d-%h-%T_$wx$h_scrot.png' -e 'mv $f ~/Pictures/screenshots'
+bindsym Print exec --no-startup-id scrot '%Y-%m-%d-%h-%T_$wx$h_scrot.png' -e 'mv $f ~/Pictures/screenshots'
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -124,8 +124,8 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-bindsym $mod+period exec variety -n
-bindsym $mod+comma exec variety -p
+bindsym $mod+period exec --no-startup-id variety -n
+bindsym $mod+comma exec --no-startup-id variety -p
 
 # ---------------------------------------------------------------------------
 #                          Some workspace action
@@ -177,7 +177,7 @@ bindsym $mod+Tab		workspace back_and_forth
 # ---------------------------------------------------------------------------
 
 # Wallpaper
-exec --no-startup-id feh --bg-scale feh --bg-scale ~/Pictures/wallpapers/LkliLfl.jpg 
+exec --no-startup-id feh --bg-scale feh --bg-scale ~/Pictures/wallpapers/wallhaven-322566.png
 
 # Floating windows
 for_window [class="Steam"] floating enable
@@ -190,12 +190,12 @@ for_window [class="plank"] floating enable
 for_window [instance ="plank"] floating enable
 
 # Touchpad options
-exec xinput set-prop 15 297 1
-exec xinput set-prop 15 279 1
+exec --no-startup-id xinput set-prop 15 297 1
+exec --no-startup-id xinput set-prop 15 279 1
 
 # Touchpad options
-exec xinput set-prop 14 295 1
-exec xinput set-prop 14 277 1
+exec --no-startup-id xinput set-prop 14 295 1
+exec --no-startup-id xinput set-prop 14 277 1
 
 # Software workspace assignment
 assign [class="Firefox"] $workspace2
