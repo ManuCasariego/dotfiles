@@ -12,4 +12,4 @@ This are some of my linux dotfiles
 + Fonts
 + rofi
 + Custom JetBrains IDEs Settings
-
++ Vim config

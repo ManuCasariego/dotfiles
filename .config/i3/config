@@ -229,4 +229,4 @@ gaps outer 0
 smart_gaps on
 hide_edge_borders both
 focus_follows_mouse no
-for_window [class="^.*"] border pixel 1
+for_window [class="^.*"] border pixel 2

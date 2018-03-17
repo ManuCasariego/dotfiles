@@ -28,10 +28,12 @@ alias zshconfig="subl ~/.zshrc"
 
 # For arch
 alias doeverythingplz="sudo pacman -Syyu"
+alias install="packer -S"
 
 # SSH to my sites
 alias ssh_bama="sudo ssh -i ~/.ssh/bama-test.pem ubuntu@52.19.41.88"
 alias ssh_manu="sudo ssh -i ~/.ssh/manu-ec2.pem ubuntu@34.244.32.194"
+alias ssh_manu_server="sudo ssh -i ~/.ssh/manu-server-key.pem ubuntu@34.244.90.239"
 
 alias neo="neofetch"
 
@@ -41,6 +43,12 @@ alias vimxres="vim ~/.Xresources"
 
 alias subl="subl3"
 
+alias evince="nohup evince"
+alias restart_net="sudo systemctl restart NetworkManager"
+
 # export NVM_DIR="$HOME/.nvm"
 # [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 # [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# added by Anaconda3 installer
+export PATH="/home/manu/anaconda3/bin:$PATH"
